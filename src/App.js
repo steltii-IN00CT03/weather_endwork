@@ -28,11 +28,9 @@ const [isLoading, setIsLoading] = useState(true)
     return (
       <div className='content'>
         <h3>Your geographical location:</h3>
-        <p>
-          Position:
-          {lat.toFixed(3)},
-          {lng.toFixed(3)}
-        </p>
+        <p>Position:</p>
+        <p>{lat.toFixed(3)}</p>
+        <p>{lng.toFixed(3)}</p>
         <Weather lat={lat} lng={lng}/>
       </div>
     );

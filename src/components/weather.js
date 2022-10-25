@@ -30,7 +30,7 @@ export default function Weather({lat, lng}) {
             .then((response) => {
                 console.log(response.data)
                 
-                setIcon1(ICON_URL + response.data.list[0].weather[0].icon + '@4x.png')
+                setIcon1(ICON_URL + response.data.list[8].weather[0].icon + '@2x.png')
                 
                 setDate2(response.data.list[8].dt_txt)
                 setDate3(response.data.list[16].dt_txt)
@@ -54,7 +54,7 @@ export default function Weather({lat, lng}) {
 
     return (
         <>
-            <div class="card">
+            <div class="card" style={{width: "20%;"}}>
             <img src={icon1} class="card-img-top" alt="..." />
                 <div class="card-body">
                     This is some text within a card body.
